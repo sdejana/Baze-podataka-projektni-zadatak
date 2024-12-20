@@ -1,0 +1,30 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="apoteka.gui.DodajArtikalController">
+    <Label text="Dodaj novi artikal"/>
+    <TextField fx:id="barkodTextField" promptText="Barkod"/>
+    <TextField fx:id="nazivTextField" promptText="Naziv"/>
+    <TextField fx:id="zalihaTextField" promptText="Zaliha"/>
+    <TextField fx:id="cijenaTextField" promptText="Cijena"/>
+    <TextField fx:id="proizvodjacTextField" promptText="Proizvođač ID"/>
+    <ComboBox fx:id="zaposlenikComboBox" promptText="Zaposlenik"/>
+    <ComboBox fx:id="tipArtiklaComboBox" promptText="Tip artikla: ">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Lijek"/>
+                <String fx:value="Kozmetika"/>
+                <String fx:value="Medicinsko pomagalo"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+
+    <Button text="Dodaj" onAction="#dodajArtikal"/>
+    <Button text="Kraj rada" onAction="#zatvori"/>
+</VBox>

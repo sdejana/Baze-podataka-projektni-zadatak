@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apoteka.gui.ArtikalDetaljiController">
+    <ImageView fx:id="drugImageView" fitWidth="100" fitHeight="100" AnchorPane.leftAnchor="250" AnchorPane.topAnchor="20" />
+
+    <Label fx:id="barkodLabel" layoutX="20" layoutY="20" text="Barkod: ">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="nazivLabel" layoutX="20" layoutY="60" text="Naziv: ">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="proizvodjacLabel" layoutX="20" layoutY="100" text="Proizvođač: ">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="zalihaLabel" layoutX="20" layoutY="140" text="Zaliha: ">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="tipArtiklaLabel" layoutX="20" layoutY="180" text="Tip artikla: ">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Label>
+    <Label fx:id="nazivTipaArtikla" layoutX="20" layoutY="220" text="Kategorija: ">
+        <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+        </font></Label>
+</AnchorPane>

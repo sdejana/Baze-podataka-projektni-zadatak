@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+    <VBox spacing="10" alignment="CENTER"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="apoteka.gui.GenerisiRacunController">
+        <TextField fx:id="barkodTextField" promptText="Unesi barkod"/>
+        <TextField fx:id="nazivArtiklaTextField" promptText="Unesi naziv artikla"/>
+        <TextField fx:id="kolicinaTextField" promptText="Unesi količinu"/>
+        <TextField fx:id="cijenaTextField" promptText="Unesi cijenu"/>
+        <ComboBox fx:id="zaposlenikComboBox" promptText="Izaberi zaposlenika"/>
+        <ComboBox fx:id="tipArtiklaComboBox" promptText="Izaberi tip artikla"/>
+        <Button fx:id="dodajStavkuButton" text="Dodaj stavku" onAction="#onDodajStavkuButtonClicked"/>
+        <Button fx:id="zavrsiButton" text="Kraj" onAction="#zavrsi" />
+    <ListView fx:id="stavkeListView" />
+
+</VBox>
+

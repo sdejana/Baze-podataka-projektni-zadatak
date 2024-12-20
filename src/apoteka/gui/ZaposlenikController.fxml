@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600" prefWidth="800" style="-fx-background-color: #a4aaec" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apoteka.gui.ZaposlenikController">
+    <Label fx:id="welcomeLabel" layoutX="20.0" layoutY="20.0" text="Dobrodošli!">
+      <font>
+         <Font name="Times New Roman Bold" size="16.0" />
+      </font></Label>
+    <Button fx:id="pregledajZalihuButton" layoutX="141.0" layoutY="86.0" onAction="#pregledajZalihu" text="Pregledaj zalihu artikala" AnchorPane.leftAnchor="141.0" AnchorPane.topAnchor="86.0">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Button>
+    <Button fx:id="dodajArtikalButton" layoutX="19.0" layoutY="86.0" onAction="#otvoriDodajArtikalProzor" text="Dodaj artikal" AnchorPane.leftAnchor="19.0" AnchorPane.topAnchor="86.0">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Button>
+    <Button fx:id="generisiRacunButton" layoutX="335.0" layoutY="86.0" onAction="#generisiRacun" text="Generiši račun" AnchorPane.leftAnchor="335.0" AnchorPane.topAnchor="86.0">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font></Button>
+    <ImageView fx:id="userImageView" fitHeight="39.0" fitWidth="44.0" layoutX="278.0" layoutY="10.0" AnchorPane.leftAnchor="278.0" AnchorPane.topAnchor="10.0" />
+   <Button fx:id="pregledajProizvodjaceButton" layoutX="475.0" layoutY="86.0" onAction="#pregledajProizvodjace" mnemonicParsing="false" text="Pregledaj proizvođače">
+      <font>
+         <Font name="Times New Roman Bold" size="14.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

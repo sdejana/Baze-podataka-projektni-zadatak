@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+
+<GridPane fx:controller="apoteka.ProizvodjacDetaljiController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER"
+          hgap="10"
+          vgap="10"
+          style="-fx-padding: 20px;">
+
+    <!-- Naslov i layout -->
+    <Label text="Detalji o Proizvođaču" GridPane.columnSpan="2" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+
+    <!-- Naziv -->
+    <Label text="Naziv:" GridPane.rowIndex="1" />
+    <Label fx:id="nazivLabel" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+    <!-- Adresa -->
+    <Label text="Adresa:" GridPane.rowIndex="2" />
+    <Label fx:id="adresaLabel" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+    <!-- Broj pošte -->
+    <Label text="Broj pošte:" GridPane.rowIndex="3" />
+    <Label fx:id="brojPosteLabel" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+    <!-- Sjediste -->
+    <Label text="Sjedište:" GridPane.rowIndex="4" />
+    <Label fx:id="sjedisteLabel" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+    <!-- Telefon -->
+    <Label text="Telefon:" GridPane.rowIndex="5" />
+    <Label fx:id="telefonLabel" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+    <!-- Unos novog proizvođača -->
+    <Label text="Unesi novog proizvođača" GridPane.rowIndex="6" GridPane.columnSpan="2" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+
+    <!-- Polja za unos novog proizvođača -->
+    <Label text="Naziv:" GridPane.rowIndex="7" />
+    <TextField fx:id="nazivTextField" GridPane.rowIndex="7" GridPane.columnIndex="1" />
+
+    <Label text="Adresa:" GridPane.rowIndex="8" />
+    <TextField fx:id="adresaTextField" GridPane.rowIndex="8" GridPane.columnIndex="1" />
+
+    <Label text="Broj pošte:" GridPane.rowIndex="9" />
+    <TextField fx:id="brojPosteTextField" GridPane.rowIndex="9" GridPane.columnIndex="1" />
+
+    <Label text="Sjedište:" GridPane.rowIndex="10" />
+    <TextField fx:id="sjedisteTextField" GridPane.rowIndex="10" GridPane.columnIndex="1" />
+
+    <Label text="Telefon:" GridPane.rowIndex="11" />
+    <TextField fx:id="telefonTextField" GridPane.rowIndex="11" GridPane.columnIndex="1" />
+
+    <!-- Dugmad za unos i brisanje -->
+    <HBox alignment="CENTER" GridPane.rowIndex="12" GridPane.columnSpan="2" spacing="10">
+        <Button text="Dodaj proizvođača" onAction="#dodajProizvodjaca" />
+        <Button text="Izbriši proizvođača" onAction="#obrisiProizvodjaca" />
+    </HBox>
+
+    <!-- Dugme za zatvaranje -->
+    <HBox alignment="CENTER" GridPane.rowIndex="13" GridPane.columnSpan="2" spacing="10">
+        <Button text="Zatvori" onAction="#closeDetails" />
+    </HBox>
+
+</GridPane>
