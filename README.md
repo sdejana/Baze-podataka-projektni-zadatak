@@ -2,6 +2,12 @@
 
 Ovo je projektni zadatak za predmet **Baze podataka** na Elektrotehničkom fakultetu u Banjoj Luci. Cilj projekta je kreiranje baze podataka sa odgovarajućim modelom i funkcionalnostima za desktop aplikaciju koja koristi MySQL bazu podataka.  
 
+## Kontakt informacije
+
+e-mail: smiljanicdejana02@gmail.com, dejana.smiljanic@student.etf.unibl.org
+
+LinkedIn profil: https://www.linkedin.com/in/dejana-smiljanic-7129b931a/
+
 ---
 
 ## 📋 Opis projekta  
@@ -66,4 +72,5 @@ begin
     insert into zaposlenik(IdZaposlenika, Ime, Prezime, JMBG, Email, DatumZaposlenja, Plata, AdresaStanovanja, RadnoVrijeme, BrojPoste, IdApoteke) values (pIme, pPrezime, pJMBG, pEmail, pDatumZaposlenja, pPlata, pAdresaStanovanja, pRadnoVrijeme, pBrojPoste, pIdApoteke);
 end$$
 delimiter ;
+
 
